@@ -5,6 +5,9 @@
         <div class="dino-header text-center">
             <h1>Journey to the Center of the Earth</h1>
             <h2 class="journey-font">DINOSAURS!</h2>
+            {% if isMac %}
+                <h3>We love to eat Mac!!!   RRRRAAA!!!!!!!</h3>
+            {% endif %}
         </div>
         <div class="row">
             {% for dino in dinos %}

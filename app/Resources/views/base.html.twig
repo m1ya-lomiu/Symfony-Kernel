@@ -39,6 +39,9 @@
                 </div>
                 <div class="clearfix">
                 </div>
+                {{ render(controller('AppBundle:Dinosaur:_latestTweets', {
+                    'userOnMac': app.request.attributes.get('isMac')
+                })) }}
             </div>
         </div>
 
